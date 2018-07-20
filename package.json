@@ -20,6 +20,7 @@
   },
   "scripts": {
     "buildServer": "webpack --config webpack_server.config.js",
-    "build": "webpack"
+    "build": "webpack",
+    "express": "node ./http_server.js"
   }
 }
