@@ -27,7 +27,9 @@ npm run build
 npm run buildServer
 ```
 
-启动 HTTP 服务器，就可以去浏览器访问了
+启动 HTTP 服务器
 ```
 npm run express
 ```
+
+可在浏览器端查看效果了 http://localhost:3000
