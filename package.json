@@ -29,7 +29,7 @@
     "express": "node ./http_server.js"
   },
   "bugs": {
-    "url": "https://github.com/hironi/isomorphic-webpack-express-react-starter/issues"
+    "url": "https://github.com/ronffy/isomorphic-webpack-express-react-starter/issues"
   },
-  "homepage": "https://github.com/hironi/isomorphic-webpack-express-react-starter#readme"
+  "homepage": "https://github.com/ronffy/isomorphic-webpack-express-react-starter#readme"
 }
