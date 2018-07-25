@@ -38,3 +38,9 @@ npm run express
 ```
 
 可在浏览器端查看效果了 http://localhost:3000
+
+## 存在的问题
+
+### 同构后node输出的html内引用哪个js文件
+
+1. 引用bundle_browser，跟非同构时引用的是一个，但是这个js文件是通过`react-dom`的`render`方法实现渲染的;
