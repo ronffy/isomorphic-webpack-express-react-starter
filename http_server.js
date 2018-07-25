@@ -9,6 +9,7 @@ app.get('/', function(req, res) {
   <html>
   <head>
     <meta charset="UTF-8">
+    <link href="./dist/main.css" rel="stylesheet"></head>
   </head>
   <body>
   <div id="app">${render()}</div>
