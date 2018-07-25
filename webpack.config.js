@@ -1,4 +1,7 @@
 const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
   entry: './main_browser.js',
   output: {
@@ -23,8 +26,20 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['ignore-loader'],
+        exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       }
     ]
-  }
+  },
+  plugins: [
+    new htmlWebpackPlugin({
+      title: '同构项目',
+      filename: 'index.html',
+      template: './entry.ejs',
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
+  ]
 }

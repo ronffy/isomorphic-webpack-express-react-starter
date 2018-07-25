@@ -17,6 +17,11 @@ npm install
 yarn
 ```
 
+开发用于浏览器环境运行的文件
+```
+npm run dev
+```
+
 构建用于浏览器环境运行的文件
 ```
 npm run build
